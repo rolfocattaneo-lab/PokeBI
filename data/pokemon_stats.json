@@ -1,0 +1,92 @@
+[
+  {
+    "pokemon_id": 1,
+    "pokemon_name": "bulbasaur",
+    "hp": 45,
+    "attack": 49,
+    "defense": 49,
+    "special_attack": 65,
+    "special_defense": 65,
+    "speed": 45
+  },
+  {
+    "pokemon_id": 2,
+    "pokemon_name": "ivysaur",
+    "hp": 60,
+    "attack": 62,
+    "defense": 63,
+    "special_attack": 80,
+    "special_defense": 80,
+    "speed": 60
+  },
+  {
+    "pokemon_id": 3,
+    "pokemon_name": "venusaur",
+    "hp": 80,
+    "attack": 82,
+    "defense": 83,
+    "special_attack": 100,
+    "special_defense": 100,
+    "speed": 80
+  },
+  {
+    "pokemon_id": 4,
+    "pokemon_name": "charmander",
+    "hp": 39,
+    "attack": 52,
+    "defense": 43,
+    "special_attack": 60,
+    "special_defense": 50,
+    "speed": 65
+  },
+  {
+    "pokemon_id": 5,
+    "pokemon_name": "charmeleon",
+    "hp": 58,
+    "attack": 64,
+    "defense": 58,
+    "special_attack": 80,
+    "special_defense": 65,
+    "speed": 80
+  },
+  {
+    "pokemon_id": 6,
+    "pokemon_name": "charizard",
+    "hp": 78,
+    "attack": 84,
+    "defense": 78,
+    "special_attack": 109,
+    "special_defense": 85,
+    "speed": 100
+  },
+  {
+    "pokemon_id": 7,
+    "pokemon_name": "squirtle",
+    "hp": 44,
+    "attack": 48,
+    "defense": 65,
+    "special_attack": 50,
+    "special_defense": 64,
+    "speed": 43
+  },
+  {
+    "pokemon_id": 8,
+    "pokemon_name": "wartortle",
+    "hp": 59,
+    "attack": 63,
+    "defense": 80,
+    "special_attack": 65,
+    "special_defense": 80,
+    "speed": 58
+  },
+  {
+    "pokemon_id": 9,
+    "pokemon_name": "blastoise",
+    "hp": 79,
+    "attack": 83,
+    "defense": 100,
+    "special_attack": 85,
+    "special_defense": 105,
+    "speed": 78
+  }
+]
