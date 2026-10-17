@@ -1,54 +1,3 @@
-/*import { writeFile } from 'node:fs/promises';
-
-async function caricaPokemon(){
-
-    const urlElenco = await fetch('https://pokeapi.co/api/v2/pokemon?limit=9&offset=0'
-    );
-
-    if (!urlElenco.ok) {
-        throw new Error(`HTTP error! status: ${urlElenco.status}`);
-    }
-
-    const elencoPokemon = await urlElenco.json();
-
-    const risultati = await Promise.all(
-        elencoPokemon.results.map(async (voce) => {
-            const rispostaDettagli = await fetch(voce.url);
-
-            if (!rispostaDettagli.ok) {
-                throw new Error(`HTTP error! status: ${rispostaDettagli.status}`);
-            }
-
-            const dettagliPokemon = await rispostaDettagli.json();
-            return estraiStatistiche(dettagliPokemon);
-        })
-    );
-
-    const percorsoElenco = new URL('../../data/pokemon_stats.json', import.meta.url);
-    const contentElenco = JSON.stringify(risultati, null, 2);
-    await writeFile(percorsoElenco, contentElenco, 'utf-8');
-
-    console.log(`Dati dell'elenco dei Pokémon salvati in ${percorsoElenco}`);
-
-
-    console.table(risultati);
-}
-
-function estraiStatistiche(pokemon) {
-    const statistiche = { 
-        pokemon_id: pokemon.id, 
-        pokemon_name: pokemon.name};
-
-    for (const voce of pokemon.stats) {
-        const nomeStatistica = voce.stat.name.replaceAll('-', '_');
-        statistiche[nomeStatistica] = voce.base_stat;
-    }
-
-    return statistiche;
-}
-
-caricaPokemon().catch(console.error);
-*/
 
 import { mkdir, writeFile, rename } from 'node:fs/promises';
 
@@ -72,7 +21,7 @@ async function scaricaJson(url) {
         } catch (errore) {
 
             if (tentativo === maxTentativi) {
-                throw new Error('Download fallito: ${url}', { cause: errore });
+                throw new Error(`Download fallito: ${url}`, { cause: errore });
             }
 
             console.log(`Tentativo ${tentativo} fallito: ${url}`);
