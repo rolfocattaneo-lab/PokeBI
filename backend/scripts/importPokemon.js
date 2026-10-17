@@ -75,7 +75,7 @@ async function scaricaJson(url) {
                 throw new Error('Download fallito: ${url}', { cause: errore });
             }
 
-            console.log('Tentativo ${tentativo} fallito: ${url}');
+            console.log(`Tentativo ${tentativo} fallito: ${url}`);
 
             await new Promise(resolve => 
                 setTimeout(resolve, 1000 * tentativo)); // Attesa prima del prossimo tentativo
@@ -116,7 +116,7 @@ async function caricaPokemon() {
 
         risultati.push(...risultatiBlocco);
 
-        console.log('Importati ${risultati.length}/${elenco.length} Pokémon');
+        console.log(`Importati ${risultati.length}/${elenco.length} Pokémon`);
     }
 
     const cartella = new URL('../../data/', import.meta.url);
